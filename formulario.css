@@ -1,0 +1,219 @@
+/* --- Form Overlays and Background --- */
+#formularioContainer.oculto {
+  display: none;
+}
+
+#formularioContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* --- Card Animation and Close Button --- */
+.card-container {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  height: 70%;
+}
+
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.close-form-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #999;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-form-btn:hover {
+  color: #333;
+}
+
+/* --- Form Styles --- */
+.formulario {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 380px;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logi_titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+.formulario label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formulario input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  outline: none;
+}
+
+.formulario button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.formulario button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* --- Social Login Button and Link --- */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #aaa;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.5em;
+}
+
+#gmail-login-button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #555;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#gmail-login-button:hover {
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.g-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("google-logo.png");
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.crear_cuenta_enlace {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.crear_cuenta_enlace span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.crear_cuenta_enlace span:hover {
+  color: #0056b3;
+}
+
+/* Container for the password field and the toggle icon */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Estilo del ícono cuando la contraseña está oculta */
+.toggle-password {
+  position: absolute;
+  top: 260px;
+  right: 50px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-image: url(src_logos/hidden.webp); /* <--- Primer icono */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Estilo del ícono cuando la contraseña es visible */
+.toggle-password.visible {
+  background-image: url(src_logos/eye.webp); /* <--- Segundo icono */
+}

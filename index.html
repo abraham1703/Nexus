@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="" />
+    <title>Nexus pc -Descargar</title>
+    <link rel="icon" type="image/x-icon" href="src/nexus.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="src_logos/">
+</head>
+
+<body>
+
+    <header class="contenedor1">
+        <nav>
+            <ul class="barra" data-aos="zoom-in">
+                <li><a class="titulo_log" href="#">Nexus</a></li>
+                <li><a href="#principal">Principal</a></li>
+                <li><a href="#inform">informacion</a></li>
+                <li><a href="#descarga">Descarga</a></li>
+                <li><a href="#footer" https://wa.me/04129874349">Contactame</a></li>
+
+
+                <li><a id="mostrarFormularioBtn" class="registro-btn">Resgistro</a></li>
+            </ul>
+
+            <div data-aos="zoom-in" class="menu-icon">&#9776;</div>
+        </nav>
+
+
+
+        <div class="sidebar">
+            <a href="#" class="close-btn">&times;</a>
+            <nav>
+                <ul class="sidebar-menu">
+                    <li><a href="#principal">Principal</a></li>
+                    <li><a href="#inform">informacion</a></li>
+                    <li><a href="#descarga">Descarga</a></li>
+                    <li><a href="#footer">Contactame</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+
+
+
+
+
+
+    <section class="contenido2" id="principal">
+        <div class="cont2">
+            <h1 class="titulo1" id="linea-superior"></h1>
+            <h1 class="titulo" id="linea-inferior"></h1>
+            <p class="descripcion00">
+                La heramienta top uno para saber los componetes de tu equipo
+                informatico.
+            </p>
+        </div>
+
+        <div class="cont_botnes">
+            <a href="#descarga">
+                <button class="boton">Descargar</button>
+            </a>
+        </div>
+
+    </section>
+
+
+
+
+    <div id="formularioContainer" class="oculto">
+        <div class="card-container">
+            <div class="card card-front">
+                <form id="" action="" method="POST">
+                    <div class="formulario">
+                        <button class="close-form-btn" type="button">&times;</button>
+                        <h2 class="logi_titulo">Inicia sesión</h2>
+
+                        <label for="login-usuario">Usuario:</label>
+                        <input type="text" id="login-usuario" name="usuario" required>
+
+                        <label for="login-contrasena">Contraseña:</label>
+                        <input type="password" id="login-contrasena" name="contrasena" required>
+                        <span class="toggle-password" data-target="login-contrasena"></span>
+
+                        <button type="submit">Enviar</button>
+
+                        <a class="crear_cuenta_enlace" href="#">¿No tienes una cuenta? <span
+                                id="crear-cuenta-link">Crear cuenta</span></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card card-back">
+                <form id="registro-form" action="registro.php" method="POST">
+                    <div class="formulario">
+                        <button class="close-form-btn" type="button">&times;</button>
+                        <h2 class="logi_titulo">Registro</h2>
+
+                        <label for="reguistro-usuario">Usuario:</label>
+                        <input type="text" id="reguistro-usuario" name="usuario" required>
+
+                        <label for="reguistro-contrasena">Contraseña:</label>
+                        <input type="password" id="reguistro-contrasena" name="contrasena" required>
+                        <span class="toggle-password" data-target="reguistro-contrasena"></span>
+
+                        <button type="submit">Enviar</button>
+
+                        <div id="message-container"></div>
+                        <div class="divider"><span>o</span></div>
+                        <button id="gmail-login-button" type="button">
+                            <span class="g-icon"></span>
+                            <span class="g-text">Iniciar sesión con Google</span>
+                        </button>
+                        <a class="crear_cuenta_enlace" href="#"><span id="regresar-link">Regresar</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="container3" id="inform">
+        <div class="cont3">
+            <h2 class="h20" data-aos="fade-down">¿Cansado de la duda? </h2>
+            <p data-aos="fade-up" class="subtiulo1_cont3">Repotencia tu PC sin perder tiempo ni dinero</h2>
+        </div>
+
+        <div class="cont4" data-aos="fade-right">
+            <img data-aos="zoom-in" class="imagene1" src="src/ajustes-de-engranajes.webp" alt="engranaje">
+
+            <h2>Compatibilidad sin duda</h2>
+            <p class="subtiulo2_cont4">
+                Nuestra aplicación elimina la
+                incertidumbre. <br> Te guiamos paso a paso para que encuentres <br> los componentes
+                que realmente necesitas,<br> compatibles entre sí ningu costo</p>
+        </div>
+
+        <div class="cont5" data-aos="fade-left">
+            <img data-aos="zoom-in-up" class="imagene1" src="src/automatizado.webp" alt="automatizacion">
+            <h2 class="h2_ct3 ">Analisis automatizado </h2>
+            <p class="subtiulo3_cont5 ">Analizamos cada componente de tu <br> equipo
+                actual y te ofrecemos <br> recomendaciones personalizadas para<br>
+                optimizar su rendimiento, ya sea para<br> juegos, trabajo o diseño.</p>
+        </div>
+
+
+        <div class="terce_contenido" data-aos="fade-right">
+            <img data-aos="zoom-in-up" class="imagene1" src="src/wifi (2).webp" alt="wifi">
+            <h2>Quieres saber que dispoditipo <br> esta conectado a tu red?</h2>
+            <p class="subtiulo3_cont6">
+                Con solo un toque, puedes escanear tu red <br> y ver una lista
+                completa de todos los dispositivos <br> conectados, junto con
+                información detallada <br> de cada uno. <br>
+            </p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="seccion-especificaciones" id="descarga">
+        <div class="imagen-app">
+            <img src="src/nexus.webp" alt="Imagen de la App">
+
+
+            <div class="contdescarga">
+                <a class="descarga" href="">Descargar</a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="especificaciones-container">
+            <div class="fila-cajas">
+                <div class="caja">
+                    <img class="imagen_descrpcion" src="src_logos/windows.svg" alt="windos">
+                    <h4>Sistema Operativo</h4>
+                    <p>windos</p>
+                </div>
+                <div class="caja">
+                    <img class="imagen_descrpcion" src="src/traductor_1.webp" alt="Idioma">
+                    <h4>Idioma</h4>
+                    <p>Español-Inglis.</p>
+                </div>
+                <div class="caja">
+                    <img class="imagen_descrpcion" src="src/disco.webp" alt="Almacenamiento">
+                    <h4>Almacenamiento </h4>
+                    <p>300 MB</p>
+                </div>
+            </div>
+
+            <div class="fila-cajas">
+                <div class="caja">
+                    <img class="imagen_descrpcion" src="src/procesador-_1_.webp" alt="Procesador">
+                    <h4>Procesador</h4>
+                    <p>Arquitectura x64-32x</p>
+                </div>
+                <div class="caja">
+                    <img class="imagen_descrpcion" src="src/ram.webp" alt="Memoria">
+                    <h4>Memoria</h4>
+                    <p> 40 MB RAM</p>
+                </div>
+                <div class="caja">
+                    <img class="imagen_descrpcion" src="src/analista-de-negocios.webp" alt="Desarrollador">
+                    <h4>Desarrollador</h4>
+                    <p>Abraham Castro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <ul>
+                        <li><a class="icons" href="#"><img class="icons" src="src_logos/facebook.svg"
+                                    alt="Facebook"></a></li>
+                        <li><a href="https://wa.me/04129874349"><img class="icons" src="src_logos/whatsapp (1).svg"
+                                    alt="ws"></a></li>
+                        <li><a href="#"><img class="icons" src="src_logos/instagram_dark.svg" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <address>
+                    <p>Email: <a href="mailto:infonexus@gmail.com">infonexus@gmail.com</a></p>
+                    <p>Teléfono: <a href="tel:+04129874349">+0412 987 4349</a></p>
+                </address>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2024 Nexus. Todos los derechos reservados.</p>
+                <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="json.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
